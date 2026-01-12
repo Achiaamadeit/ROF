@@ -1,0 +1,398 @@
+body{
+  background-color: rgb(245, 241, 245);
+}
+
+p{
+  font-size: 20px;
+}
+/* My Home Page*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* smaller than full screen */
+  overflow: hidden;
+}
+/* My Hero Video styling */
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the container without distortion */
+  max-height: 100vh;  /* This prevents video from being too tall */
+  z-index: 9;        /* behind nav */
+}
+/* Navigation container */
+.nav-links {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+justify-content: center;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Each link designed to be a box */
+.nav-links a {
+  display: block;
+  padding: 16px 32px;
+  background-color: rgba(251, 146, 240, 0.8);
+  border: 5px solid #f9f4f4;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap; /* keep text on one line */
+  transition: background 0.3s, transform 0.3s;
+}
+/* Hover effect */
+.nav-links a:hover {
+  background-color: #fe3c97;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* reduce height on mobile */
+  }
+.nav-links {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-width: 3px;
+  }
+}
+.Start{
+  background-image: linear-gradient(to top, rgb(245, 151, 200), white);
+  margin-bottom: 0;
+}
+.end{
+  background-image: linear-gradient(to top, rgb(181, 99, 162), white);
+  margin-top: 0;
+
+}
+
+
+/* My Explore Page*/
+a:hover {
+  color: rgb(1, 12, 22);
+}
+.Explore {
+  text-align: center;
+  font-size: 30px;
+  border-top: 10px solid rgb(222, 154, 246);
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgb(222, 154, 235);
+  border-top: 6px solid rgb(230, 125, 205);
+}
+.Explore:active, .Explore:focus {
+  background-color: #fe3c97;
+  color: white;
+}
+.Us { 
+  border: 1px solid black;
+  list-style-type: none;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(247, 242, 246);
+  font-size: 22px;
+  line-height: 3rem;
+  border-top: 10px solid black; 
+} 
+li a {
+  display: block;
+}
+
+li a:hover, li a:focus {
+  background-color: rgb(229, 139, 214);
+  color: whitesmoke;
+}
+.MissionB img{
+width: 30%;
+}
+.Background {
+  background-image: url("https://res.cloudinary.com/dbanlelte/image/upload/v1767127721/397A3761_1_vatcc1.jpg");
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+/*My Contact Page*/
+.MyC {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: .5rem .5rem;
+  box-sizing:border-box;
+}.MyC img {
+  width: 100%;
+  max-width: 1250px;   /* This controls size on desktop */
+  height: auto;
+  border-radius: 1rem;
+  border: 8px solid rgb(250, 205, 215);
+}
+.second-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 49px;
+  background-image: linear-gradient(to top, rgb(245, 151, 200), white);
+  padding: 20px;
+}
+/* Image + text beside each other */
+.Contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image size */
+.Contact img {
+  width: 35%;
+  max-width: 320px;
+  height: auto;
+  border: 10px double pink;
+  border-radius: 12px;
+}
+/* Text */
+.Contact span {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.Forms {
+  font-size: 20px;
+  text-align: center;
+    background-image: linear-gradient(to right, rgb(249, 12, 205), rgb(251, 250, 251), rgb(246, 202, 8));
+  color: black;
+}
+.F {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(22, 22, 22);
+  background-image: linear-gradient(to right, rgb(249, 12, 205), rgb(251, 250, 251), rgb(246, 202, 8));
+}
+.MyB {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .second-grid {
+    grid-template-columns: 1fr;
+  }
+  .Contact {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .Contact img {
+    width: auto;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.mission {
+  columns: 3 300px;
+  column-rule: 3px solid rgb(244, 137, 201);
+}
+.mission p {
+  margin-top: 0px;
+}
+.mission h2 {
+  margin-top: 0;
+  background-color: rgb(253, 157, 239);
+  padding: 1rem;
+  break-inside: avoid;
+  break-before: column;
+}
+.Moree {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(28, 24, 27);
+}
+.MissionB {
+  min-height: 100vh;
+  background-image: url("https://res.cloudinary.com/dbanlelte/image/upload/v1767127790/Bub_m3ptof.jpg"), linear-gradient(to left, rgb(250, 151, 232), rgb(251, 250, 251), white);
+  background-position: right center;
+  background-blend-mode: multiply;
+  background-repeat: repeat-y, no-repeat;
+}
+h2 {
+  font-size: 40px;
+  color: rgb(114, 23, 69);
+}
+h1, h3 {
+  color: rgb(22, 21, 21);
+  background-color: hsl(325, 76%, 80%); 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h4{
+  font-size: 50px;
+color: rgb(248, 246, 247);
+}
+.heroo video {
+  padding-top: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.heroo video {
+  width: 100%;         /* Helps fill the  container width */
+  max-width: 1400px;   /* This also stops it from becoming too wide on large screens */
+  height: auto;        /* The height here,keeps aspect ratio */
+  max-height: 90vh;    /* This basically prevents video from being taller than viewport */
+  object-fit: cover;   /* This helpsfills container nicely */
+  display: block;
+}
+.clip{
+  background-color: rgb(238, 198, 235);
+}
+.third-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.column-five video{
+   width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+.box{
+  width: 100%;
+  max-width: 1300px;     
+  height: 100%;
+    margin: 0 auto;        /* Purposely to  center it */
+  background-image: linear-gradient(to right, rgb(249, 12, 205), rgb(242, 116, 200), rgb(241, 192, 240));
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-size: clamp(3rem, 8vw, 3em);
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Poppins', 'Arial Black', sans-serif;
+  font-weight: 50;
+  padding-top: 2rem;
+}
+.Dance-section {
+  background-image: linear-gradient(to right, rgb(252, 248, 251), rgb(242, 116, 200), rgb(220, 234, 173));
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+.Dance-section h1 {
+  background-color: white;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/* Grid Layout */
+.Dance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Individual Card */
+.Dancer-card {
+    position: relative;
+    aspect-ratio: 1 / 1; /* Makes it a perfect circle */
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.Dancer-card:hover {
+    transform: scale(1.08);
+}
+.Dancer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    filter: grayscale(80%);
+}
+
+.Dancer-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+/* Name Overlay */
+.Dancer-name {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.Dancer-card:hover .Dancer-name {
+    opacity: 1;
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .Dance-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 40px;
+    }
+    .Dancer-name {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .Dance-section h1 {
+        font-size: 2.2rem;
+    }
+    .Dance-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+    .Dancer-name {
+        font-size: 1.4rem;
+        bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .Dance-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .Dance-section {
+        padding: 60px 15px;
+    }
+}
+
+
